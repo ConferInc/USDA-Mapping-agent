@@ -1,0 +1,27 @@
+# CrewAI Framework
+crewai>=0.28.0
+crewai-tools>=0.1.0
+
+# LangChain (required by CrewAI)
+langchain>=0.1.0
+langchain-openai>=0.0.5
+
+# HTTP Requests
+requests>=2.31.0
+
+# Environment Variables
+python-dotenv>=1.0.0
+
+# OpenAI (for LLM features)
+openai>=1.0.0
+
+# Optional: For async support
+httpx>=0.25.0
+
+# Optional: For YAML configuration
+pyyaml>=6.0
+
+# Optional: For better type hints
+typing-extensions>=4.8.0
+
+

@@ -1,0 +1,32 @@
+# Crew Configurations for USDA Nutrition Fetcher
+
+crews:
+  nutrition_fetch:
+    name: "Nutrition Fetch Crew"
+    description: "Main crew for fetching nutrition data from USDA API"
+    process: "sequential"  # Options: sequential, hierarchical
+    verbose: true
+    agents:
+      - mapping_lookup
+      - search_strategy
+      - usda_search
+      - match_scoring
+      - nutrition_extractor
+    tasks:
+      - lookup_task
+      - search_task
+      - scoring_task
+      - extraction_task
+
+  verification:
+    name: "Verification Crew"
+    description: "Crew for verifying and validating ingredient mappings"
+    process: "sequential"
+    verbose: true
+    agents:
+      - verification
+      - usda_search
+    tasks:
+      - verification_task
+
+
