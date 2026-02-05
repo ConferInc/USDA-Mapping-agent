@@ -3,3 +3,8 @@ __pycache__/
 *.pyc
 .cursor/
 *.log
+*.csv
+*.json
+*.log
+*_failed.txt
+failed_ingredient_command_run_result.txt
